@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_margin="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/konfirmasi"
+        android:clickable="true"
+        android:foreground="?android:selectableItemBackground"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_margin="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/mobil"
+            android:id="@+id/imgMobil"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <LinearLayout
+            android:layout_margin="8dp"
+            android:layout_toLeftOf="@id/imageCancel"
+            android:orientation="vertical"
+            android:layout_marginLeft="8sp"
+            android:layout_toRightOf="@id/imgMobil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/nama_mobil"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="Honda Jazz RS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/nama_kategori"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:text="Honda - 2019"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/harga"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:text="Rp. 243,000,000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView
+
+            android:id="@+id/imageCancel"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

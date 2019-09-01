@@ -1,0 +1,290 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="bowo.skripsi.mobileshop.DetailMobilAct">
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/ln1"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/back"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/nama_mobilHeader"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:text="Detail Mobil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_marginBottom="4dp"
+        android:layout_below="@id/ln1"
+        android:layout_above="@id/btn_beli"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="#fff"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/nama_mobil"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:text="BMW X4 Sports"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="16dp"
+                    android:background="@drawable/bg_layer"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/jumlahUnit"
+                    android:text="600 Unit"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tahun"
+                    android:text="2019"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginRight="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="-"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/nama_kategori"
+                    android:text="BMW"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ir.apend.slider.ui.Slider
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                app:animateIndicators="true"
+                app:defaultIndicators="circle"
+                app:indicatorSize="8dp"
+                app:intervalSecond="5"
+                app:loopSlides="true" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/harga_mobil"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:layout_alignParentLeft="true"
+                    android:text="Rp. 243,000,000"
+                    android:layout_toLeftOf="@id/bookmark"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/bookmark"
+                    android:layout_centerInParent="true"
+                    android:tint="@color/colorPrimary"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_bookmark_border_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="#f1f1f1"/>
+            <TextView
+                android:text="Fitur"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="4dp"
+                    android:weightSum="6"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="#000"
+                        android:text="Warna Mobil"
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="#000"
+                        android:text=":"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/warna"
+                        android:textColor="#000"
+                        android:text="Merah"
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="4dp"
+                    android:weightSum="6"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="#000"
+                        android:text="Kapasitas"
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="#000"
+                        android:text=":"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/kapasitas"
+                        android:textColor="#000"
+                        android:text="6 Orang"
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="4dp"
+                    android:weightSum="6"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="#000"
+                        android:text="Bahan Bakar"
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="#000"
+                        android:text=":"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/bahanbakar"
+                        android:textColor="#000"
+                        android:text="Pertalite"
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="4dp"
+                    android:weightSum="6"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="#000"
+                        android:text="Status"
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="#000"
+                        android:text=":"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/status"
+                        android:textColor="#000"
+                        android:text="Baru"
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="#f1f1f1"/>
+            <TextView
+                android:text="Deskripsi"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/deskripsi"
+                android:text="Bagi kalian yang bikin app yang berbau per-uang-an pasti kepikiran tentang ini. Yakni gimana caranya supaya format angka yang muncul yang yang sebelumnya seperti ini"
+                android:layout_marginTop="4dp"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <Button
+        android:background="@drawable/bg_button"
+        android:layout_centerInParent="true"
+        android:id="@+id/btn_beli"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text="Beli"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
